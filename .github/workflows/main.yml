@@ -17,6 +17,9 @@ jobs:
       - name: Set up GCC
         run: sudo apt-get install gcc  # Устанавливаем компилятор GCC
 
+      - name: Check GCC version
+        run: gcc --version
+
       - name: Compile the program
         run: gcc -o my_program main.c  # Компилируем файл main.c в исполняемый файл my_program
 
